@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: "Lato Black";
+    src: url('assets/Lato-Black.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.get_quote {
+    background-color: #f06c64;
+}
+
+.conteiner {
+    position: relative;
+    width: 1020px;
+    margin: 0 auto;
+}
+
+.get_quote .conteiner h2 {
+    padding-top: 70px;
+    margin-left: 40px;
+    font-size: 30px;
+    font-family: Lato Black, Arial, sans-serif;
+    font-weight: 400;
+    color:  #f0d8d9;
+    line-height: 17.86px;
+    letter-spacing: 0.01px;
+}
+
+.get_quote .conteiner p {
+    padding-top: 27px;
+    margin-left: 41px;
+    font-size: 18px;
+    font-family: Lato, Arial, sans-serif;
+    font-weight: 300;
+    color: #f0d8d9;
+    line-height: 29px;
+}
+
+form {
+    margin-top: 45px;
+    margin-left: 40px;
+ }
+
+input, textarea {
+    width: 619px;
+    height: 38px;
+    margin-bottom: 16px;
+    padding-left: 15px;
+    background-color: #d6564f;
+    border: #d6564f;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: Lato, Arial, sans-serif;
+    font-weight: 400;
+    color: #f48c8f;
+    line-height: 21.56px;
+}
+
+textarea{
+    height: 202px;
+    resize: none;
+    padding-top: 8px;
+}
+
+input::-moz-placeholder {
+     color: #f48c8f;
+ }
+
+input::-webkit-input-placeholder {
+    color: #f48c8f;
+}
+
+input:-ms-input-placeholder {
+    color: #f48c8f;
+}
+
+textarea::-moz-placeholder {
+    color: #f48c8f;
+}
+
+textarea::-webkit-input-placeholder {
+    color: #f48c8f;
+}
+
+textarea:-ms-input-placeholder {
+    color: #f48c8f;
+}
+
+input[type = submit] {
+    width: 150px;
+    height: 30px;
+    color: #f48c8f;
+}
+
+.contact_info {
+    float: right;
+    width: 301px;
+    margin-top: 46px;
+    margin-right: 40px;
+}
+
+.contact_info h3 {
+    font-family: Lato Black, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #f0d8d9;
+    line-height: 17.86px;
+}
+
+.get_quote .conteiner .contact_info p {
+    padding: 10px 0 0 0;
+    margin: 0;
+    font-family: Lato, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #f0d8d9;
+    line-height: 21.56px;
+}
+
+.fas {
+    margin-right: 7px;
+    margin-left: 2px;
+}
+
+.contact_info a {
+    text-decoration: none;
+    color: #f0d8d9;
+}
+
+.red_line {
+    border: none;
+    background-color: #ea676b;
+    color: #ea676b;
+    height: 6px;
+}
+
+footer {
+    height: 76px;
+    background-color: #2d303a;
+}
+
+.copyright {
+    display: inline-block;
+    padding: 31px 0 32px 42px;
+    font-family: Lato, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    color: #666d89;
+}
+
+footer .conteiner .icons {
+    float: right;
+    margin-right: 36px;
+}
+
+.icons div {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #666d89;
+    border-radius: 50%;
+    margin-top: 24px;
+    margin-right: 4px;
+}
+
+.icons div:hover {
+    background-color: #ffff00;
+    cursor: pointer;
+}
+
+.icons div i {
+    padding: 9px 11px;
+    color: #666d89;
+    height: 12px;
+}
