@@ -393,8 +393,8 @@ section h2 {
 .team {
     display: flex;
     justify-content: space-between;
-    margin: 42px 40px 0 40px;
-    padding-bottom: 66px;
+    margin: 44px 40px 0 40px;
+    padding-bottom: 69px;
 }
 
 .person {
