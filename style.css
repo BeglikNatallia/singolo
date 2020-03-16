@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-@font-face{
+@font-face {
     font-family: "Lato Black";
     src: url('assets/Lato-Black.ttf');
     font-weight: 400;
@@ -53,13 +53,13 @@ header {
     justify-content: space-between;
 }
 
-.navigation li {
+li {
     display: inline-block;
     text-align: center;
     line-height: 9.32px;
 }
 
-.navigation li a {
+a {
     font-size: 12px;
     font-family: Lato, Arial, sans-serif;
     font-weight: 700;
@@ -67,9 +67,12 @@ header {
     color: #ffffff;
 }
 
-.navigation li a:hover {
-    background-color: #f06c64;
+a:hover {
     cursor: pointer;
+}
+
+a.active {
+    color: #f06c64;
 }
 
 .black_line {
@@ -134,6 +137,18 @@ header {
     z-index: 2;
 }
 
+.phone_vertical .phone_off {
+    position: absolute;
+    left: 126px;
+    top: 116px;
+    display: none;
+}
+
+.phone_vertical .phone_off.active {
+    display: inline;
+    z-index: 3;
+}
+
 .phone_vertical .circle {
     z-index: 3;
     position: absolute;
@@ -189,6 +204,19 @@ header {
     z-index: 2;
 }
 
+.phone_horizontal .phone_off {
+    position: absolute;
+    left: 553px;
+    top: 113px;
+    display: none;
+    transform: rotate(-90deg);
+}
+
+.phone_horizontal .phone_off.active {
+    display: inline;
+    z-index: 3;
+}
+
 .phone_horizontal .circle {
     z-index: 3;
     position: absolute;
@@ -235,7 +263,7 @@ section h2 {
     font-family: Lato Black, Arial, sans-serif;
     font-weight: 900;
     color: #666d89;
-       line-height: 18.86px;
+    line-height: 18.86px;
 }
 
 .services .conteiner section p {
@@ -469,7 +497,7 @@ section h2 {
     font-size: 30px;
     font-family: Lato Black, Arial, sans-serif;
     font-weight: 400;
-    color:  #f0d8d9;
+    color: #f0d8d9;
     line-height: 17.86px;
     letter-spacing: 0.01px;
 }
@@ -505,7 +533,7 @@ input, textarea {
     line-height: 21.56px;
 }
 
-textarea{
+textarea {
     height: 202px;
     resize: none;
     padding-top: 8px;

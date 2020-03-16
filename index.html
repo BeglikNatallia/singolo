@@ -13,15 +13,15 @@
 <header>
     <div class="conteiner">
         <div class="logo">
-            <h1>SINGOLO<span>*</span></h1>
+            <h1 id = "home">SINGOLO<span>*</span></h1>
         </div>
         <nav class="navigation">
-            <ul class="nav">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">CONTACT</a></li>
+            <ul class="nav" id = "nav">
+                <li><a href="#home" class="active">HOME</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
     </div>
@@ -40,7 +40,8 @@
             <img src="assets/shadow.png" class="shadow">
             <img src="assets/base_for_phone.png" class="base_for_phone">
             <img src="assets/picture_phone_vertical.png" class="picture_phone_vertical">
-            <img src="assets/circle.png" class="circle">
+            <img src="assets/phone_screen_black.png" class = "phone_off">
+            <img src="assets/circle.png" class="circle" id = "phone_vertical_circle">
             <img src="assets/square.png" class="square">
             <img src="assets/outer_circle.png" class="outer_circle">
             <img src="assets/speaker.png" class="speaker">
@@ -50,7 +51,8 @@
             <img src="assets/shadow_horizontal.png" class="shadow_horizontal">
             <img src="assets/base_for_phone.png" class="base_for_phone">
             <img src="assets/picture_phone_horizontal.png" class="picture_phone_horizontal">
-            <img src="assets/circle.png" class="circle">
+            <img src="assets/phone_screen_black.png" class = "phone_off">
+            <img src="assets/circle.png" class="circle" id = "phone_horizontal_circle">
             <img src="assets/square.png" class="square">
             <img src="assets/outer_circle.png" class="outer_circle">
             <img src="assets/speaker.png" class="speaker">
@@ -63,7 +65,7 @@
 <div class="services">
     <div class="conteiner">
         <section>
-            <h2>Our Services</h2>
+            <h2 id = "services">Our Services</h2>
             <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus,
                 nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
                 tortor mauris condimentum nibh.</p>
@@ -134,7 +136,7 @@
 
 <article class="portfolio">
     <div class="conteiner">
-        <h2>Portfolio</h2>
+        <h2 id = "portfolio">Portfolio</h2>
         <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
         <nav class="sort">
             <div>All</div>
@@ -162,7 +164,7 @@
 
 <article class="about_us">
     <div class="conteiner">
-        <h2>About Us</h2>
+        <h2 id = "about">About Us</h2>
         <p class="text_about_us">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non
             commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus
             commodo, tortor mauris condimentum nibh.</p>
@@ -212,7 +214,7 @@
             nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
             tortor mauris condimentum nibh.</p>
         <section class="contact_info">
-            <h3>Contact Information</h3>
+            <h3 id = "contact">Contact Information</h3>
             <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.
                 Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis,
                 et consequat felis.<br><br>
@@ -246,5 +248,6 @@
         </div>
     </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
