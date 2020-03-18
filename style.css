@@ -18,8 +18,9 @@
 }
 
 header {
-    height: 89px;
+    height: 94px;
     background-color: #2d303a;
+    border-bottom: solid #323746 6px;
 }
 
 .logo h1 {
@@ -75,30 +76,10 @@ a.active {
     color: #f06c64;
 }
 
-.black_line {
-    border: none;
-    background-color: #323746;
-    color: #323746;
-    height: 6px;
-}
-
-.red_line {
-    border: none;
-    background-color: #ea676b;
-    color: #ea676b;
-    height: 6px;
-}
-
-.white_line {
-    border: none;
-    background-color: #ffffff;
-    color: #ffffff;
-    height: 6px;
-}
-
 .slider {
-    height: 594px;
+    height: 600px;
     background-color: #f06c64;
+    border-bottom: solid #ea676b 6px;
 }
 
 .switch_left {
@@ -255,6 +236,7 @@ a.active {
 
 .services {
     background-color: #f2f2f2;
+    border-bottom: solid #ffffff 6px;
 }
 
 section h2 {
@@ -346,6 +328,7 @@ section h2 {
 
 .portfolio {
     background-color: #2d303a;
+    border-bottom: solid #323746 6px;
 }
 
 .portfolio .conteiner h2, .about_us .conteiner h2 {
@@ -395,22 +378,16 @@ section h2 {
 .wrapper {
     margin-left: 40px;
     margin-right: 40px;
-    padding-bottom: 67px;
+    padding-bottom: 68px;
     display: grid;
     grid-template-columns: 220px 220px 220px 220px;
     grid-template-rows: 187px 187px 187px;
     grid-gap: 20px;
 }
 
-.black_line_after_portfolio {
-    border: none;
-    background-color: #323746;
-    color: #323746;
-    height: 6px;
-}
-
 .about_us {
     background-color: #f2f2f2;
+    border-bottom: solid #ffffff 6px;
 }
 
 .text_about_us {
@@ -421,8 +398,8 @@ section h2 {
 .team {
     display: flex;
     justify-content: space-between;
-    margin: 44px 40px 0 40px;
-    padding-bottom: 69px;
+    margin: 43px 40px 0 40px;
+    padding-bottom: 65px;
 }
 
 .person {
@@ -480,15 +457,9 @@ section h2 {
     margin-left: 8px;
 }
 
-.white_line_after_about_us {
-    border: none;
-    background-color: #ffffff;
-    color: #ffffff;
-    height: 6px;
-}
-
 .get_quote {
     background-color: #f06c64;
+    border-bottom: solid #ea676b 6px;
 }
 
 .get_quote .conteiner h2 {
@@ -603,13 +574,6 @@ input[type = submit] {
 .contact_info a {
     text-decoration: none;
     color: #f0d8d9;
-}
-
-.red_line {
-    border: none;
-    background-color: #ea676b;
-    color: #ea676b;
-    height: 6px;
 }
 
 footer {
