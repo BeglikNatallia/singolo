@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: "Lato Black";
-    src: url('assets/Lato-Black.ttf');
+    src: url('assets/fonts/Lato-Black.ttf');
     font-weight: 400;
     font-style: normal;
 }
@@ -399,7 +399,7 @@ section h2 {
     display: flex;
     justify-content: space-between;
     margin: 43px 40px 0 40px;
-    padding-bottom: 65px;
+    padding-bottom: 62px;
 }
 
 .person {
@@ -433,28 +433,13 @@ section h2 {
 
 .icons div {
     display: inline-block;
-    width: 32px;
-    height: 32px;
-    border: 1px solid #666d89;
-    border-radius: 50%;
-    margin-top: 24px;
+    margin-top: 23px;
     margin-right: 4px;
 }
 
 .icons div:hover {
     background-color: #ffff00;
     cursor: pointer;
-}
-
-.icons div i {
-    padding: 9px 11px;
-    color: #666d89;
-    height: 12px;
-}
-
-.icons div img {
-    margin-top: 9px;
-    margin-left: 8px;
 }
 
 .get_quote {
@@ -595,23 +580,7 @@ footer .conteiner .icons {
     margin-right: 36px;
 }
 
-.icons div {
-    display: inline-block;
-    width: 32px;
-    height: 32px;
-    border: 1px solid #666d89;
-    border-radius: 50%;
-    margin-top: 24px;
-    margin-right: 4px;
-}
-
 .icons div:hover {
     background-color: #ffff00;
     cursor: pointer;
-}
-
-.icons div i {
-    padding: 9px 11px;
-    color: #666d89;
-    height: 12px;
 }
