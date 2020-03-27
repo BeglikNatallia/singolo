@@ -1,0 +1,98 @@
+@media all and (max-width: 1020px) {
+    .conteiner {
+        width: 768px;
+    }
+
+    .switch_left, .switch_right,
+    .phone_horizontal, .phone_vertical,
+    .desktop_version {
+        display: none;
+    }
+
+    .switch_left_tablet, .switch_right_tablet,
+    .phone_vertical_tablet, .phone_horizontal_tablet,
+    .tablet_version {
+        display: block;
+    }
+
+    .slider {
+        height: 452px;
+    }
+
+    section h2 {
+        padding: 49px 0 27px 40px;
+    }
+
+    .services .conteiner section p {
+        padding: 0 41px 35px 40px;
+        line-height: 30px;
+    }
+
+    .columns {
+        grid-template-columns: 294px 294px;
+        grid-template-rows: 143px 143px;
+        grid-gap: 0 59px;
+        margin-left: 41px;
+        margin-bottom: 69px;
+    }
+
+    .info p {
+        padding-top: 8px;
+        line-height: 22.56px;
+    }
+
+    .second_column .info,
+    .third_column .info {
+        padding-left: 80px;
+    }
+
+    .third_column .space_for_picture,
+    .second_column .space_for_picture {
+        margin-left: 0;
+    }
+
+    .portfolio .conteiner p {
+        padding-top: 26px;
+        margin-right: 76px;
+    }
+
+    .sort {
+        margin: 12px 0 26px 41px;
+    }
+
+    .wrapper {
+        grid-template-columns: 220px 220px 220px;
+        grid-gap: 20px;
+        margin-left: 39px;
+    }
+
+    .about_us .conteiner .text_about_us {
+        margin-right: 40px;
+    }
+
+    .info_person {
+        margin-right: 14px;
+    }
+
+    .get_quote .conteiner p {
+        margin-right: 40px;
+    }
+
+    input, textarea {
+        width: 442px;
+        margin-bottom: 12px;
+    }
+
+    textarea {
+        height: 159px;
+    }
+
+    input[type = submit] {
+        width: 136px;
+        height: 30px;
+    }
+
+    .contact_info {
+        width: 221px;
+    }
+}

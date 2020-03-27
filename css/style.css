@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: "Lato Black";
-    src: url('assets/fonts/Lato-Black.ttf');
+    src: url('../assets/fonts/Lato-Black.ttf');
     font-weight: 400;
     font-style: normal;
 }
@@ -54,10 +54,15 @@ header {
     justify-content: space-between;
 }
 
+ul {
+    list-style-type: disc;
+    color: #ffffff;
+}
+
 li {
-    display: inline-block;
     text-align: center;
     line-height: 9.32px;
+    list-style-type: disc;
 }
 
 a {
@@ -72,8 +77,9 @@ a:hover {
     cursor: pointer;
 }
 
-a.active {
+li .active {
     color: #f06c64;
+    list-style-type: none;
 }
 
 .slider {
@@ -97,6 +103,64 @@ a.active {
 .switch_left:hover, .switch_right:hover {
     background-color: #ffffff;
     cursor: pointer;
+}
+
+.switch_left_tablet, .switch_right_tablet,
+.phone_vertical_tablet, .phone_horizontal_tablet {
+    display: none;
+}
+
+.phone_vertical_tablet img:first-child {
+    position: absolute;
+    left: 10.85%;
+    top: 41px;
+}
+
+.phone_vertical_tablet img:nth-child(2) {
+    position: absolute;
+    left: 83px;
+    top: 41px;
+    z-index: 2;
+}
+
+.phone_vertical_tablet img:nth-child(3) {
+    position: absolute;
+    left: 12.09%;
+    top: 86px;
+    z-index: 3;
+}
+
+.phone_horizontal_tablet img:first-child {
+    position: absolute;
+    right: 86px;
+    top: 133px;
+}
+
+.phone_horizontal_tablet img:nth-child(2) {
+    position: absolute;
+    right: 108px;
+    top: 133px;
+    z-index: 2;
+}
+
+.phone_horizontal_tablet img:nth-child(3) {
+    position: absolute;
+    right: 157px;
+    top: 142px;
+    z-index: 3;
+
+}
+
+.switch_left_tablet {
+    position: absolute;
+    top: 214.42px;
+    left: 28.42px;
+}
+
+.switch_right_tablet {
+    position: absolute;
+    top: 214.42px;
+    right: 28.42px;
 }
 
 .phone_vertical .shadow {
@@ -240,7 +304,7 @@ a.active {
 }
 
 section h2 {
-    padding: 67px 0 31px 40px;
+    padding: 67px 0 27px 40px;
     font-size: 30px;
     font-family: Lato Black, Arial, sans-serif;
     font-weight: 900;
@@ -249,7 +313,7 @@ section h2 {
 }
 
 .services .conteiner section p {
-    padding: 0 41px 43px 40px;
+    padding: 0 41px 46px 40px;
     font-size: 18px;
     font-family: Lato, Arial, sans-serif;
     font-weight: 300;
@@ -258,35 +322,18 @@ section h2 {
     line-height: 29px;
 }
 
-.first_line {
-    display: flex;
-    flex-basis: 315px;
-    margin: 0 0 32px 41px;
-}
-
-.second_line {
-    display: flex;
-    padding: 0 0 63px 41px;
-}
-
-.design {
-    width: 315px;
+.columns {
+    margin-left: 40px;
+    margin-bottom: 31px;
+    display: grid;
+    grid-template-columns: 294px 294px 296px;
+    grid-template-rows: 123px 123px;
+    grid-gap: 0 22px;
 }
 
 .space_for_picture {
     float: left;
-    width: 60px;
-    height: 60px;
-    border: 2px solid #666d89;
-    border-radius: 50%;
-}
-
-.space_for_picture img {
-    margin: 15px;
-}
-
-.clear {
-    clear: both;
+    margin-top: 4px;
 }
 
 .info {
@@ -301,7 +348,7 @@ section h2 {
 }
 
 .info p {
-    padding-top: 6px;
+    padding-top: 10px;
     font-size: 12px;
     font-family: Lato, Arial, sans-serif;
     font-weight: 400;
@@ -378,7 +425,7 @@ section h2 {
 .wrapper {
     margin-left: 40px;
     margin-right: 40px;
-    padding-bottom: 68px;
+    padding-bottom: 69px;
     display: grid;
     grid-template-columns: 220px 220px 220px 220px;
     grid-template-rows: 187px 187px 187px;
@@ -404,6 +451,10 @@ section h2 {
 
 .person {
     flex-basis: 300px;
+}
+
+.tablet_version {
+    display: none;
 }
 
 .person h3 {
@@ -523,6 +574,7 @@ input[type = submit] {
     width: 150px;
     height: 30px;
     color: #f48c8f;
+    padding: 0;
 }
 
 .contact_info {
