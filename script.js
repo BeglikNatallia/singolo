@@ -1,7 +1,9 @@
 let navigation = document.getElementById('nav'),
-    phone_btn_vertical = document.getElementById('phone_vertical_circle'),
-    phone_btn_horizontal = document.getElementById('phone_horizontal_circle'),
-    phone_off = document.getElementsByClassName('phone_off');
+    phoneBbtnVertical = document.getElementById('phone_vertical_circle'),
+    phoneBtnHorizontal = document.getElementById('phone_horizontal_circle'),
+    phoneOff = document.getElementsByClassName('phone_off'),
+    iconHumburger = document.getElementsByClassName('icon')[0],
+    navLinks = document.getElementsByClassName('navLinks')[0];
 
 //меню с переключением
 navigation.addEventListener("click", (event) => {
@@ -11,10 +13,21 @@ navigation.addEventListener("click", (event) => {
 });
 
 //активация экрана телефона при нажатии на кнопку телефона
-phone_btn_vertical.addEventListener('click', () => {
-    phone_off[0].classList.toggle('active');
+phoneBbtnVertical.addEventListener('click', () => {
+    phoneOff[0].classList.toggle('active');
 });
 
-phone_btn_horizontal.addEventListener('click', () => {
-    phone_off[1].classList.toggle('active');
+phoneBtnHorizontal.addEventListener('click', () => {
+    phoneOff[1].classList.toggle('active');
+});
+
+//меню гамбургер
+iconHumburger.addEventListener('click', () => {
+    navLinks.classList.toggle('block');
+    iconHumburger.classList.toggle('rotate');
+});
+
+navLinks.addEventListener('click', () => {
+    navLinks.classList.toggle('block');
+    iconHumburger.classList.toggle('rotate');
 });

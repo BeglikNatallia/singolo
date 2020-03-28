@@ -106,13 +106,16 @@ li .active {
 }
 
 .switch_left_tablet, .switch_right_tablet,
-.phone_vertical_tablet, .phone_horizontal_tablet {
+.phone_vertical_tablet, .phone_horizontal_tablet,
+.switch_left_mobile, .switch_right_mobile,
+.phone_vertical_mobile, .phone_horizontal_mobile,
+.mobile-wrap {
     display: none;
 }
 
 .phone_vertical_tablet img:first-child {
     position: absolute;
-    left: 10.85%;
+    left: 83px;
     top: 41px;
 }
 
@@ -127,6 +130,26 @@ li .active {
     position: absolute;
     left: 12.09%;
     top: 86px;
+    z-index: 3;
+}
+
+.phone_vertical_mobile img:first-child {
+    position: absolute;
+    left: 41px;
+    top: 18px;
+}
+
+.phone_vertical_mobile img:nth-child(2) {
+    position: absolute;
+    left: 41px;
+    top: 18px;
+    z-index: 2;
+}
+
+.phone_vertical_mobile img:nth-child(3) {
+    position: absolute;
+    left: 46px;
+    top: 42px;
     z-index: 3;
 }
 
@@ -148,7 +171,26 @@ li .active {
     right: 157px;
     top: 142px;
     z-index: 3;
+}
 
+.phone_horizontal_mobile img:first-child {
+    position: absolute;
+    right: 51px;
+    top: 65px;
+}
+
+.phone_horizontal_mobile img:nth-child(2) {
+    position: absolute;
+    right: 60px;
+    top: 65px;
+    z-index: 2;
+}
+
+.phone_horizontal_mobile img:nth-child(3) {
+    position: absolute;
+    right: 84px;
+    top: 71px;
+    z-index: 3;
 }
 
 .switch_left_tablet {
@@ -161,6 +203,18 @@ li .active {
     position: absolute;
     top: 214.42px;
     right: 28.42px;
+}
+
+.switch_left_mobile {
+    position: absolute;
+    left: 10px;
+    top: 99px;
+}
+
+.switch_right_mobile {
+    position: absolute;
+    right: 10px;
+    top: 99px;
 }
 
 .phone_vertical .shadow {
@@ -432,6 +486,10 @@ section h2 {
     grid-gap: 20px;
 }
 
+.picture:nth-child(n+13) {
+    display: none
+}
+
 .about_us {
     background-color: #f2f2f2;
     border-bottom: solid #ffffff 6px;
@@ -520,9 +578,14 @@ section h2 {
     line-height: 29px;
 }
 
+.form_contactInfo {
+    display: flex;
+}
+
 form {
     margin-top: 45px;
     margin-left: 40px;
+    flex-basis: 619px;
 }
 
 input, textarea {
@@ -578,10 +641,10 @@ input[type = submit] {
 }
 
 .contact_info {
-    float: right;
-    width: 301px;
     margin-top: 46px;
     margin-right: 40px;
+    margin-left: 21px;
+    flex-basis: 301px;
 }
 
 .contact_info h3 {
@@ -635,4 +698,74 @@ footer .conteiner .icons {
 .icons div:hover {
     background-color: #ffff00;
     cursor: pointer;
+}
+
+.mobile-wrap {
+    margin: auto;
+    height: 100vh;
+    color: #ffffff;
+}
+
+.nav-wrap {
+    overflow: hidden;
+    position: absolute;
+    z-index: 6;
+    background-color: #2D303A;
+    width: 278px;
+}
+
+.navLinks {
+    display: none;
+}
+
+.nav-wrap a {
+    padding: 10px 10px;
+    display: block;
+    font-size: 20px;
+    font-family: Lato, Arial, sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 29px;
+}
+
+.navLinks a:hover {
+    color: #f06c64;
+}
+
+.nav-wrap a.icon {
+    width: 25px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 11px;
+}
+
+.logo_mobile {
+    text-align: center;
+}
+
+.logo_mobile h1 {
+    margin-top: 0;
+    padding-top: 24px;
+    font-size: 20px;
+    font-family: Lato, Arial, sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 24px;
+}
+
+.logo_mobile h1 span {
+    color: #f06c64
+}
+
+.block {
+    display: block;
+}
+
+.rotate {
+    transform: rotate(90deg);
+    margin-left: 20px;
+    margin-top: 11px;
 }

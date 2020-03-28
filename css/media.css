@@ -91,8 +91,154 @@
         width: 136px;
         height: 30px;
     }
+}
+
+
+@media all and (max-width: 767px) {
+    .conteiner {
+        width: 375px;
+    }
+
+    header {
+        height: 71px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .logo {
+        display: block;
+        text-align: center;
+    }
+
+    .logo h1 {
+        margin-top: 0;
+        padding-top: 24px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .switch_left_tablet, .switch_right_tablet,
+    .phone_vertical_tablet, .phone_horizontal_tablet,
+    .tablet_version, .copyright, .logo {
+        display: none;
+    }
+
+    .switch_left_mobile, .switch_right_mobile,
+    .phone_vertical_mobile, .phone_horizontal_mobile,
+    .logo_mobile, .mobile-wrap {
+        display: block;
+    }
+
+    .slider {
+        height: 220px;
+    }
+
+    section h2 {
+        padding: 26px 32px 25px 32px;
+    }
+
+    .services .conteiner section p {
+        padding: 0 32px 35px 32px;
+        line-height: 30px;
+    }
+
+    .columns {
+        grid-template-columns: 300px;
+        grid-template-rows: 104px;
+        grid-gap: 15px;
+        margin-left: 32px;
+        margin-bottom: 15px;
+    }
+
+    .portfolio .conteiner h2 {
+        padding-top: 42px;
+    }
+
+    .wrapper {
+        grid-template-columns: 151px 151px;
+        grid-template-rows: 128px 128px;
+        grid-gap: 13px;
+        margin-left: 30px;
+        padding-bottom: 42px;
+    }
+
+    .picture > img {
+        width: 151px;
+        height: 128px;
+    }
+
+    .picture:nth-child(n+9) {
+        display: none
+    }
+
+    .about_us .conteiner h2 {
+        padding-top: 33px;
+        margin-left: 30px;
+        line-height: 36px;
+    }
+
+    .about_us .conteiner p {
+        padding-top: 14px;
+        margin-left: 30px;
+        line-height: 30px;
+    }
+
+    .team {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    .desktop_version {
+        display: block;
+    }
+
+    .icons {
+        margin-bottom: 34px;
+    }
+
+    .get_quote .conteiner h2 {
+        padding-top: 44px;
+        margin-left: 30px;
+    }
+
+    .get_quote .conteiner p {
+        margin-left: 30px;
+    }
+
+    input, textarea {
+        width: 315px;
+        margin-bottom: 12px;
+    }
+
+    textarea {
+        height: 159px;
+    }
+
+    input[type = submit] {
+        width: 315px;
+        height: 38px;
+    }
+
+    form {
+        margin-top: 45px;
+        margin-left: 30px;
+        flex-basis: 0;
+    }
 
     .contact_info {
-        width: 221px;
+        flex-basis: 0;
+        margin: 32px 30px 42px;
+    }
+
+    footer .conteiner .icons {
+        float: none;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .form_contactInfo {
+        flex-direction: column;
     }
 }
