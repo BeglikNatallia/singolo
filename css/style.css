@@ -175,20 +175,20 @@ li .active {
 
 .phone_horizontal_mobile img:first-child {
     position: absolute;
-    right: 51px;
+    right: 41px;
     top: 65px;
 }
 
 .phone_horizontal_mobile img:nth-child(2) {
     position: absolute;
-    right: 60px;
+    right: 51px;
     top: 65px;
     z-index: 2;
 }
 
 .phone_horizontal_mobile img:nth-child(3) {
     position: absolute;
-    right: 84px;
+    right: 75px;
     top: 71px;
     z-index: 3;
 }
