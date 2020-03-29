@@ -107,18 +107,6 @@
         display: none;
     }
 
-    .logo {
-        display: block;
-        text-align: center;
-    }
-
-    .logo h1 {
-        margin-top: 0;
-        padding-top: 24px;
-        font-size: 20px;
-        line-height: 24px;
-    }
-
     .switch_left_tablet, .switch_right_tablet,
     .phone_vertical_tablet, .phone_horizontal_tablet,
     .tablet_version, .copyright, .logo {
@@ -159,7 +147,7 @@
     .wrapper {
         grid-template-columns: 151px 151px;
         grid-template-rows: 128px 128px;
-        grid-gap: 13px;
+        grid-gap: 14px;
         margin-left: 30px;
         padding-bottom: 42px;
     }
