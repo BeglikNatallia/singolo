@@ -238,8 +238,8 @@ li .active {
 
 .phone_vertical .phone_off {
     position: absolute;
-    left: 126px;
-    top: 116px;
+    left: 125px;
+    top: 118px;
     display: none;
 }
 
@@ -305,8 +305,8 @@ li .active {
 
 .phone_horizontal .phone_off {
     position: absolute;
-    left: 553px;
-    top: 113px;
+    left: 558px;
+    top: 115px;
     display: none;
     transform: rotate(-90deg);
 }
